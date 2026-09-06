@@ -3,96 +3,6 @@
 
 <head>
 
-    <link
-    rel="canonical"
-    href="https://alirezanaderinasab.ir/"
-    >
-
-   <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-
-            "@graph": [
-
-                {
-                    "@type": "Person",
-                    "@id": "https://alirezanaderinasab.ir/#person",
-                    "name": "Alireza Naderinasab",
-                    "url": "https://alirezanaderinasab.ir/",
-                    "image": "https://alirezanaderinasab.ir/static/images/profile.png",
-                    "jobTitle": "IoT Engineer & Researcher",
-                    "description": "IoT engineer, researcher, and developer specializing in Internet of Things, embedded systems, wireless communication, and intelligent technologies.",
-                    "email": "mailto:alirezanaderip21@gmail.com",
-                    "sameAs": [
-                        "https://github.com/Alirezandri",
-                        "https://www.linkedin.com/in/alireza-naderi-883b7a245/"
-                    ]
-                },
-
-
-                {
-                    "@type": "Book",
-                    "@id": "https://alirezanaderinasab.ir/#book-software-engineering",
-                    "name": "Terminology of Software Engineering",
-                    "author": [
-                        {
-                            "@id": "https://alirezanaderinasab.ir/#person"
-                        },
-                        {
-                            "@type": "Person",
-                            "name": "Masoud Arfaei"
-                        }
-                    ],
-                    "publisher": {
-                        "@type": "Organization",
-                        "name": "Tarjoman Negar"
-                    },
-                    "datePublished": "2024",
-                    "isbn": "978-622-8434-39-1",
-                    "numberOfPages": 411,
-                    "url": "https://opac.nlai.ir/opac-prod/search/briefListSearch.do?command=FULL_VIEW&id=9656395&pageStatus=1&sortKeyValue1=sortkey_title&sortKeyValue2=sortkey_author"
-                },
-
-
-                {
-                    "@type": "Book",
-                    "@id": "https://alirezanaderinasab.ir/#book-computer-networks",
-                    "name": "Introduction to Computer Networks with Sample Questions",
-                    "author": {
-                        "@id": "https://alirezanaderinasab.ir/#person"
-                    },
-                    "publisher": {
-                        "@type": "Organization",
-                        "name": "Ghalam Mehr"
-                    },
-                    "datePublished": "2024",
-                    "isbn": "978-622-5480-56-8",
-                    "numberOfPages": 91,
-                    "url": "https://opac.nlai.ir/opac-prod/search/briefListSearch.do?command=FULL_VIEW&id=9590596&pageStatus=1&sortKeyValue1=sortkey_title&sortKeyValue2=sortkey_author"
-                },
-
-
-                {
-                    "@type": "ScholarlyArticle",
-                    "@id": "https://alirezanaderinasab.ir/#article-vpn",
-                    "name": "مجله علمی _ترویجی “شبکه های کامپیوتری“انواع VPN، نحوه استفاده از آن و حفظ امنیت بیشتر در تانگینگ ارسال داده ها",
-                    "author": {
-                        "@id": "https://alirezanaderinasab.ir/#person"
-                    },
-                    "datePublished": "2024",
-                    "url": "https://civilica.com/doc/2084252/",
-                    "about": [
-                        "VPN",
-                        "Tunneling",
-                        "IPsec",
-                        "Network Security"
-                    ]
-                }
-
-            ]
-        }
-    </script>
-
     <meta charset="UTF-8">
 
     <meta
@@ -100,11 +10,13 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Alireza Naderinasab | IoT Engineer, Researcher & Developer</title>
+    <title>
+        Alireza Naderinasab | IoT Engineer, Researcher & Developer
+    </title>
 
     <meta
-    name="description"
-    content="Alireza Naderinasab is an IoT engineer, researcher, and developer specializing in Internet of Things, embedded systems, wireless communication, and intelligent technologies."
+        name="description"
+        content="Alireza Naderinasab is an IoT engineer, researcher, and developer specializing in Internet of Things, embedded systems, wireless communication, and intelligent technologies."
     >
 
     <meta
@@ -117,7 +29,16 @@
         content="Alireza Naderinasab, IoT, Internet of Things, IoT Engineer, Embedded Systems, Arduino, ESP32, Wireless Communication, Computer Engineering"
     >
 
+    <!-- Canonical URL -->
+
+    <link
+        rel="canonical"
+        href="https://alirezanaderinasab.ir/"
+    >
+
+
     <!-- Open Graph / Social Media -->
+
     <meta
         property="og:title"
         content="Alireza Naderinasab | IoT Engineer & Researcher"
@@ -134,9 +55,103 @@
     >
 
     <meta
+        property="og:url"
+        content="https://alirezanaderinasab.ir/"
+    >
+
+    <meta
         property="og:image"
         content="{{ url_for('static', filename='images/profile.png', _external=True) }}"
     >
+
+
+    <!-- Person & Publications Schema -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+
+        "@graph": [
+
+            {
+                "@type": "Person",
+                "@id": "https://alirezanaderinasab.ir/#person",
+                "name": "Alireza Naderinasab",
+                "url": "https://alirezanaderinasab.ir/",
+                "image": "https://alirezanaderinasab.ir/static/images/profile.png",
+                "jobTitle": "IoT Engineer & Researcher",
+                "description": "IoT engineer, researcher, and developer specializing in Internet of Things, embedded systems, wireless communication, and intelligent technologies.",
+                "email": "mailto:alirezanaderip21@gmail.com",
+                "sameAs": [
+                    "https://github.com/Alirezandri",
+                    "https://www.linkedin.com/in/alireza-naderi-883b7a245/"
+                ]
+            },
+
+            {
+                "@type": "Book",
+                "@id": "https://alirezanaderinasab.ir/#book-software-engineering",
+                "name": "Terminology of Software Engineering",
+                "author": [
+                    {
+                        "@id": "https://alirezanaderinasab.ir/#person"
+                    },
+                    {
+                        "@type": "Person",
+                        "name": "Masoud Arfaei"
+                    }
+                ],
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Tarjoman Negar"
+                },
+                "datePublished": "2024",
+                "isbn": "978-622-8434-39-1",
+                "numberOfPages": 411,
+                "url": "https://opac.nlai.ir/opac-prod/search/briefListSearch.do?command=FULL_VIEW&id=9656395&pageStatus=1&sortKeyValue1=sortkey_title&sortKeyValue2=sortkey_author"
+            },
+
+            {
+                "@type": "Book",
+                "@id": "https://alirezanaderinasab.ir/#book-computer-networks",
+                "name": "Introduction to Computer Networks with Sample Questions",
+                "author": {
+                    "@id": "https://alirezanaderinasab.ir/#person"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Ghalam Mehr"
+                },
+                "datePublished": "2024",
+                "isbn": "978-622-5480-56-8",
+                "numberOfPages": 91,
+                "url": "https://opac.nlai.ir/opac-prod/search/briefListSearch.do?command=FULL_VIEW&id=9590596&pageStatus=1&sortKeyValue1=sortkey_title&sortKeyValue2=sortkey_author"
+            },
+
+            {
+                "@type": "ScholarlyArticle",
+                "@id": "https://alirezanaderinasab.ir/#article-vpn",
+                "name": "مجله علمی _ترویجی “شبکه های کامپیوتری“انواع VPN، نحوه استفاده از آن و حفظ امنیت بیشتر در تانگینگ ارسال داده ها",
+                "author": {
+                    "@id": "https://alirezanaderinasab.ir/#person"
+                },
+                "datePublished": "2024",
+                "inLanguage": "fa",
+                "url": "https://civilica.com/doc/2084252/",
+                "about": [
+                    "VPN",
+                    "Tunneling",
+                    "IPsec",
+                    "Network Security"
+                ]
+            }
+
+        ]
+    }
+    </script>
+
+
+    <!-- Main Stylesheet -->
 
     <link
         rel="stylesheet"
