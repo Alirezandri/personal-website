@@ -12,9 +12,6 @@ def home():
         name=name
     )
 
-@app.route("/publications")
-def publications():
-    return render_template("publications.html")
 
 @app.route("/robots.txt")
 def robots():
