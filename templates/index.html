@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +37,6 @@
         href="https://alirezanaderinasab.ir/"
     >
 
-
     <!-- Open Graph / Social Media -->
 
     <meta
@@ -64,10 +64,7 @@
         content="{{ url_for('static', filename='images/profile.png', _external=True) }}"
     >
 
-
-    <!-- Person & Publications Schema -->
-
-<!-- Person Schema -->
+    <!-- Structured Data -->
 
     <script type="application/ld+json">
     {
@@ -97,7 +94,6 @@
                     "https://www.linkedin.com/in/alireza-naderi-883b7a245/"
                 ]
             },
-
 
             {
                 "@type": "Book",
@@ -130,7 +126,6 @@
                 "url": "https://opac.nlai.ir/opac-prod/search/briefListSearch.do?command=FULL_VIEW&id=9656395&pageStatus=1&sortKeyValue1=sortkey_title&sortKeyValue2=sortkey_author"
             },
 
-
             {
                 "@type": "Book",
 
@@ -155,7 +150,6 @@
 
                 "url": "https://opac.nlai.ir/opac-prod/search/briefListSearch.do?command=FULL_VIEW&id=9590596&pageStatus=1&sortKeyValue1=sortkey_title&sortKeyValue2=sortkey_author"
             },
-
 
             {
                 "@type": "ScholarlyArticle",
@@ -186,7 +180,6 @@
     }
     </script>
 
-
     <!-- Main Stylesheet -->
 
     <link
@@ -200,6 +193,8 @@
 
     <header>
 
+        <!-- Navigation -->
+
         <nav class="navbar">
 
             <div class="container navbar-content">
@@ -208,10 +203,15 @@
                     AN
                 </a>
 
+                <button class="menu-toggle" aria-label="Open navigation menu">
+                    ☰
+                </button>
+
                 <div class="nav-links">
 
                     <a href="#about">About</a>
                     <a href="#education">Education</a>
+                    <a href="#experience">Experience</a>
                     <a href="#skills">Skills</a>
                     <a href="#publications">Publications</a>
                     <a href="#projects">Projects</a>
@@ -220,6 +220,7 @@
                     <a
                         href="{{ url_for('static', filename='files/Alireza_CV.pdf') }}"
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
                         CV
                     </a>
@@ -230,6 +231,7 @@
 
         </nav>
 
+        <!-- Hero -->
 
         <div class="hero container">
 
@@ -267,7 +269,6 @@
 
             </div>
 
-
             <div class="hero-image">
 
                 <img
@@ -282,8 +283,9 @@
 
     </header>
 
-
     <main>
+
+        <!-- About -->
 
         <section id="about" class="section">
 
@@ -296,9 +298,10 @@
                     <div class="about-text">
 
                         <p>
-                            I am Alireza Naderinasab, a Master's student specializing in Internet of Things
-                            (IoT), with an interest in embedded systems, intelligent
-                            devices, networking, and software development.
+                            I am Alireza Naderinasab, a Master's student specializing
+                            in Internet of Things (IoT), with an interest in embedded
+                            systems, intelligent devices, networking, and software
+                            development.
                         </p>
 
                         <p>
@@ -310,16 +313,23 @@
 
                     </div>
 
-
                     <div class="about-info">
 
-                        <p><strong>Field:</strong> Internet of Things</p>
+                        <p>
+                            <strong>Field:</strong> Internet of Things
+                        </p>
 
-                        <p><strong>Focus:</strong> IoT & Embedded Systems</p>
+                        <p>
+                            <strong>Focus:</strong> IoT & Embedded Systems
+                        </p>
 
-                        <p><strong>Education:</strong> Master's Student</p>
+                        <p>
+                            <strong>Education:</strong> Master's Student
+                        </p>
 
-                        <p><strong>Interests:</strong> Hardware, Software, AI</p>
+                        <p>
+                            <strong>Interests:</strong> Hardware, Software, AI
+                        </p>
 
                     </div>
 
@@ -329,6 +339,7 @@
 
         </section>
 
+        <!-- Education -->
 
         <section id="education" class="section">
 
@@ -338,7 +349,9 @@
 
                 <div class="education-item">
 
-                    <h3>Master's Degree in Internet of Things</h3>
+                    <h3>
+                        Master's Degree in Internet of Things
+                    </h3>
 
                     <p class="education-university">
                         Institute for Advanced Studies in Basic Sciences (IASBS)
@@ -352,10 +365,11 @@
 
                 </div>
 
-
                 <div class="education-item">
 
-                    <h3>Bachelor's Degree in Computer Engineering</h3>
+                    <h3>
+                        Bachelor's Degree in Computer Engineering
+                    </h3>
 
                     <p class="education-university">
                         Islamic Azad University of Zanjan
@@ -372,7 +386,8 @@
 
         </section>
 
-        
+        <!-- Experience -->
+
         <section id="experience" class="section">
 
             <div class="container">
@@ -381,7 +396,9 @@
 
                 <div class="experience-item">
 
-                    <h3>Teaching Assistant</h3>
+                    <h3>
+                        Teaching Assistant
+                    </h3>
 
                     <p class="experience-role">
                         Python & Advanced Database
@@ -395,10 +412,11 @@
 
                 </div>
 
-
                 <div class="experience-item">
 
-                    <h3>Instructor</h3>
+                    <h3>
+                        Instructor
+                    </h3>
 
                     <p class="experience-role">
                         Jahad Daneshgahi
@@ -415,6 +433,7 @@
 
         </section>
 
+        <!-- Skills -->
 
         <section id="skills" class="section">
 
@@ -422,50 +441,90 @@
 
                 <div class="section-heading">
 
-                <h2>Skills</h2>
+                    <h2>Skills</h2>
 
-                <p>
-                    Technologies and technical areas I use to design,
-                    develop, and analyze connected systems.
-                </p>
+                    <p>
+                        Technologies and technical areas I use to design,
+                        develop, and analyze connected systems.
+                    </p>
 
-            </div>
+                </div>
 
                 <div class="skills-grid">
 
                     <div class="skill-card">
+
                         <h3>Python</h3>
-                        <p>Programming, data processing, automation, and application development.</p>
+
+                        <p>
+                            Programming, data processing, automation,
+                            and application development.
+                        </p>
+
                     </div>
 
                     <div class="skill-card">
+
                         <h3>IoT</h3>
-                        <p>Connected devices, sensors, telemetry, and intelligent IoT systems.</p>
+
+                        <p>
+                            Connected devices, sensors, telemetry,
+                            and intelligent IoT systems.
+                        </p>
+
                     </div>
 
                     <div class="skill-card">
+
                         <h3>Embedded Systems</h3>
-                        <p>Arduino, ESP32, microcontrollers, sensors, and embedded programming.</p>
+
+                        <p>
+                            Arduino, ESP32, microcontrollers, sensors,
+                            and embedded programming.
+                        </p>
+
                     </div>
 
                     <div class="skill-card">
+
                         <h3>Wireless Communication</h3>
-                        <p>NRF24L01, wireless data transmission, and device-to-device communication.</p>
+
+                        <p>
+                            NRF24L01, wireless data transmission,
+                            and device-to-device communication.
+                        </p>
+
                     </div>
 
                     <div class="skill-card">
+
                         <h3>Networking</h3>
-                        <p>Computer networks, network communication, and infrastructure concepts.</p>
+
+                        <p>
+                            Computer networks, network communication,
+                            and infrastructure concepts.
+                        </p>
+
                     </div>
 
                     <div class="skill-card">
+
                         <h3>Git & GitHub</h3>
-                        <p>Version control, source code management, and project collaboration.</p>
+
+                        <p>
+                            Version control, source code management,
+                            and project collaboration.
+                        </p>
+
                     </div>
 
                 </div>
 
+            </div>
+
         </section>
+
+        <!-- Publications -->
 
         <section id="publications" class="section">
 
@@ -482,12 +541,11 @@
 
                 </div>
 
-
                 <div class="publications-grid">
 
                     <!-- Book 1 -->
 
-                    <div class="project-card">
+                    <article class="publication-card">
 
                         <h3>
                             Terminology of Software Engineering
@@ -498,12 +556,12 @@
                             in software engineering.
                         </p>
 
-                        <p class="project-tech">
+                        <p class="publication-meta">
                             Book · 2024 · Masoud Arfaei & Alireza Naderinasab
                         </p>
 
                         <a
-                            class="project-link"
+                            class="publication-link"
                             href="https://opac.nlai.ir/opac-prod/search/briefListSearch.do?command=FULL_VIEW&id=9656395&pageStatus=1&sortKeyValue1=sortkey_title&sortKeyValue2=sortkey_author"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -511,12 +569,11 @@
                             View Publication →
                         </a>
 
-                    </div>
-
+                    </article>
 
                     <!-- Book 2 -->
 
-                    <div class="project-card">
+                    <article class="publication-card">
 
                         <h3>
                             Introduction to Computer Networks with Sample Questions
@@ -527,12 +584,12 @@
                             concepts with sample questions and exercises.
                         </p>
 
-                        <p class="project-tech">
+                        <p class="publication-meta">
                             Book · 2024 · Alireza Naderinasab
                         </p>
 
                         <a
-                            class="project-link"
+                            class="publication-link"
                             href="https://opac.nlai.ir/opac-prod/search/briefListSearch.do?command=FULL_VIEW&id=9590596&pageStatus=1&sortKeyValue1=sortkey_title&sortKeyValue2=sortkey_author"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -540,12 +597,11 @@
                             View Publication →
                         </a>
 
-                    </div>
-
+                    </article>
 
                     <!-- Research Article -->
 
-                    <div class="project-card">
+                    <article class="publication-card">
 
                         <h3>
                             Computer Networks: VPN, Tunneling and Data Security
@@ -556,17 +612,112 @@
                             tunneling, IPsec, and network security.
                         </p>
 
-                        <p class="project-tech">
+                        <p class="publication-meta">
                             Research Article · 2024 · Alireza Naderinasab
                         </p>
 
                         <a
-                            class="project-link"
+                            class="publication-link"
                             href="https://civilica.com/doc/2084252/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             View Article →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Projects -->
+
+        <section id="projects" class="section">
+
+            <div class="container">
+
+                <h2>Projects</h2>
+
+                <div class="projects-grid">
+
+                    <div class="project-card">
+
+                        <h3>
+                            IoT-Based Remote Health Monitoring System
+                        </h3>
+
+                        <p>
+                            IoT-based remote health monitoring using sensors,
+                            connected devices, and intelligent data analysis.
+                        </p>
+
+                        <p class="project-tech">
+                            IoT · Python · Sensors · Machine Learning
+                        </p>
+
+                        <a
+                            class="project-link"
+                            href="https://github.com/Alirezandri/Arduino_Body_Temperature"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Project →
+                        </a>
+
+                    </div>
+
+                    <div class="project-card">
+
+                        <h3>
+                            NRF24L01 Wireless Communication
+                        </h3>
+
+                        <p>
+                            Wireless data communication between microcontrollers
+                            using NRF24L01 radio modules.
+                        </p>
+
+                        <p class="project-tech">
+                            Arduino · C++ · NRF24L01 · Embedded Systems
+                        </p>
+
+                        <a
+                            class="project-link"
+                            href="https://github.com/Alirezandri"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Project →
+                        </a>
+
+                    </div>
+
+                    <div class="project-card">
+
+                        <h3>
+                            IoT & Embedded Systems Projects
+                        </h3>
+
+                        <p>
+                            A collection of sensor-based projects involving
+                            temperature, gas detection, distance measurement,
+                            light sensing, and hardware interfaces.
+                        </p>
+
+                        <p class="project-tech">
+                            Arduino · C++ · Sensors · Embedded Systems
+                        </p>
+
+                        <a
+                            class="project-link"
+                            href="https://github.com/Alirezandri"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Projects →
                         </a>
 
                     </div>
@@ -577,157 +728,100 @@
 
         </section>
 
-
-        <section id="projects" class="section">
-
-        <div class="container">
-
-            <h2>Projects</h2>
-
-            <div class="projects-grid">
-
-            <div class="project-card">
-
-                <h3>IoT-Based Remote Health Monitoring System</h3>
-
-                <p>
-                    IoT-based remote health monitoring using sensors,
-                    connected devices, and intelligent data analysis.
-                </p>
-
-                <p class="project-tech">
-                    IoT · Python · Sensors · Machine Learning
-                </p>
-
-                <a
-                    class="project-link"
-                    href="https://github.com/Alirezandri/Arduino_Body_Temperature"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View Project →
-                </a>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <h3>NRF24L01 Wireless Communication</h3>
-
-                <p>
-                    Wireless data communication between microcontrollers
-                    using NRF24L01 radio modules.
-                </p>
-
-                <p class="project-tech">
-                    Arduino · C++ · NRF24L01 · Embedded Systems
-                </p>
-
-                <a
-                    class="project-link"
-                    href="https://github.com/Alirezandri"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View Project →
-                </a>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <h3>IoT & Embedded Systems Projects</h3>
-
-                <p>
-                    A collection of sensor-based projects involving
-                    temperature, gas detection, distance measurement,
-                    light sensing, and hardware interfaces.
-                </p>
-
-                <p class="project-tech">
-                    Arduino · C++ · Sensors · Embedded Systems
-                </p>
-
-                <a
-                    class="project-link"
-                    href="https://github.com/Alirezandri"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View Projects →
-                </a>
-
-            </div>
-
-        </div>
-
-        </div>
-
-
-        </section>  
-
-
+        <!-- Contact -->
 
         <section id="contact" class="section contact-section">
-        <div class="container">
 
-            <div class="section-heading">
-                <span>GET IN TOUCH</span>
-                <h2>Let's Connect</h2>
-                <p>
-                    If you would like to discuss an IoT research idea, a technical project,
-                    collaboration opportunity, or simply connect with Alireza Naderinasab,
-                    feel free to get in touch.
-                </p>
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>GET IN TOUCH</span>
+
+                    <h2>Let's Connect</h2>
+
+                    <p>
+                        If you would like to discuss an IoT research idea,
+                        a technical project, collaboration opportunity,
+                        or simply connect with Alireza Naderinasab,
+                        feel free to get in touch.
+                    </p>
+
+                </div>
+
+                <div class="contact-grid">
+
+                    <div class="contact-card">
+
+                        <h3>Email</h3>
+
+                        <p>
+                            alirezanaderip21@gmail.com
+                        </p>
+
+                        <a href="mailto:alirezanaderip21@gmail.com">
+                            Send Email →
+                        </a>
+
+                    </div>
+
+                    <div class="contact-card">
+
+                        <h3>Academic</h3>
+
+                        <p>
+                            a.naderi@iasbs.ac.ir
+                        </p>
+
+                        <a href="mailto:a.naderi@iasbs.ac.ir">
+                            Academic Contact →
+                        </a>
+
+                    </div>
+
+                    <div class="contact-card">
+
+                        <h3>Phone</h3>
+
+                        <p>
+                            +98 933 147 2040
+                        </p>
+
+                        <a href="tel:+989331472040">
+                            Call Me →
+                        </a>
+
+                    </div>
+
+                    <div class="contact-card">
+
+                        <h3>GitHub</h3>
+
+                        <p>
+                            github.com/Alirezandri
+                        </p>
+
+                        <a
+                            href="https://github.com/Alirezandri"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View GitHub →
+                        </a>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="contact-grid">
-
-                <div class="contact-card">
-                    <h3>Email</h3>
-                    <p>alirezanaderip21@gmail.com</p>
-                    <a href="mailto:alirezanaderip21@gmail.com">
-                        Send Email →
-                    </a>
-                </div>
-
-                <div class="contact-card">
-                    <h3>Academic</h3>
-                    <p>a.naderi@iasbs.ac.ir</p>
-                    <a href="mailto:a.naderi@iasbs.ac.ir">
-                        Academic Contact →
-                    </a>
-                </div>
-
-                <div class="contact-card">
-                    <h3>Phone</h3>
-                    <p>+98 933 147 2040</p>
-                    <a href="tel:+989331472040">
-                        Call Me →
-                    </a>
-                </div>
-
-                <div class="contact-card">
-                    <h3>GitHub</h3>
-                    <p>github.com/Alirezandri</p>
-                    <a href="https://github.com/Alirezandri" target="_blank">
-                        View GitHub →
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
         </section>
-
-
 
     </main>
 
+    <!-- Footer -->
 
-   <footer class="footer">
+    <footer class="footer">
 
         <div class="container">
 
@@ -739,6 +833,12 @@
 
     </footer>
 
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+    ↑
+</button>
 </body>
 
 </html>
+
