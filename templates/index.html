@@ -831,9 +831,12 @@
                         </p>
 
                     </div>
-
-                    <form id="contactForm" class="contact-form">
-
+                    {% if success %}
+                        <div class="contact-success">
+                            {{ success }}
+                        </div>
+                    {% endif %}
+                    <form id="contactForm" class="contact-form" action="/contact" method="POST">
                         <div class="form-group">
 
                             <label for="name">
